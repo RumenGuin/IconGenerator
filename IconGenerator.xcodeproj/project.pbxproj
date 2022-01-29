@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3537E40127A5048300D5D47F /* IconGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537E40027A5048300D5D47F /* IconGeneratorApp.swift */; };
-		3537E40327A5048300D5D47F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537E40227A5048300D5D47F /* ContentView.swift */; };
 		3537E40527A5048300D5D47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3537E40427A5048300D5D47F /* Assets.xcassets */; };
 		3537E40827A5048300D5D47F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3537E40727A5048300D5D47F /* Preview Assets.xcassets */; };
+		3537E41227A506E400D5D47F /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 3537E41127A506E400D5D47F /* Contents.json */; };
+		3537E41927A5089A00D5D47F /* IconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537E41727A507E800D5D47F /* IconViewModel.swift */; };
+		3537E41A27A508A100D5D47F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537E41527A5077D00D5D47F /* Home.swift */; };
+		359056E927A5797C00C92A90 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359056E827A5797C00C92A90 /* NSImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3537E3FD27A5048300D5D47F /* IconGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3537E40027A5048300D5D47F /* IconGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconGeneratorApp.swift; sourceTree = "<group>"; };
-		3537E40227A5048300D5D47F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3537E40427A5048300D5D47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3537E40727A5048300D5D47F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3537E40927A5048300D5D47F /* IconGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IconGenerator.entitlements; sourceTree = "<group>"; };
+		3537E41127A506E400D5D47F /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		3537E41527A5077D00D5D47F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		3537E41727A507E800D5D47F /* IconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewModel.swift; sourceTree = "<group>"; };
+		359056E827A5797C00C92A90 /* NSImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				3537E40027A5048300D5D47F /* IconGeneratorApp.swift */,
-				3537E40227A5048300D5D47F /* ContentView.swift */,
+				3537E41127A506E400D5D47F /* Contents.json */,
+				359056E727A5796300C92A90 /* Extension */,
+				3537E41327A5071800D5D47F /* View */,
+				3537E41427A5072000D5D47F /* ViewModel */,
 				3537E40427A5048300D5D47F /* Assets.xcassets */,
 				3537E40927A5048300D5D47F /* IconGenerator.entitlements */,
 				3537E40627A5048300D5D47F /* Preview Content */,
@@ -67,6 +76,30 @@
 				3537E40727A5048300D5D47F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3537E41327A5071800D5D47F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3537E41527A5077D00D5D47F /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3537E41427A5072000D5D47F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3537E41727A507E800D5D47F /* IconViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		359056E727A5796300C92A90 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				359056E827A5797C00C92A90 /* NSImage.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +162,7 @@
 			files = (
 				3537E40827A5048300D5D47F /* Preview Assets.xcassets in Resources */,
 				3537E40527A5048300D5D47F /* Assets.xcassets in Resources */,
+				3537E41227A506E400D5D47F /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3537E40327A5048300D5D47F /* ContentView.swift in Sources */,
+				359056E927A5797C00C92A90 /* NSImage.swift in Sources */,
+				3537E41927A5089A00D5D47F /* IconViewModel.swift in Sources */,
+				3537E41A27A508A100D5D47F /* Home.swift in Sources */,
 				3537E40127A5048300D5D47F /* IconGeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
